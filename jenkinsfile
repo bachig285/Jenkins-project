@@ -1,0 +1,30 @@
+//declarative//
+pipeline{
+	agent any
+		stages{
+			stage('compile'){
+				steps{
+					echo " compiled successfully";
+				}
+			}
+			stage('junit'){
+				steps{
+					echo "junit passed successfully";
+					
+				}
+			}
+			stage('quality'){
+				steps{
+					echo " quality passed successfully";
+					
+				}
+			}
+			stage('deploy'){
+				steps{
+					echo " deployment went successfully";
+					
+				}
+			}
+			
+		}
+}
